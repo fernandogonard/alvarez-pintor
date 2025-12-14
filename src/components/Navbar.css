@@ -1,0 +1,71 @@
+/* Navbar elegante y minimalista */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: rgba(255,255,255,0.92);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  z-index: 1000;
+  transition: background 0.3s;
+}
+
+.navbar-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 2rem;
+}
+
+.navbar-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.45rem;
+  color: #181818;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: color 0.2s;
+}
+
+.navbar-logo:hover {
+  color: #0077aa;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  color: #222;
+  text-decoration: none;
+  font-size: 1.08rem;
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+  padding-bottom: 2px;
+}
+
+.navbar-links li a:hover {
+  color: #0077aa;
+  border-color: #0077aa;
+}
+
+@media (max-width: 700px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.7rem 1rem;
+  }
+  .navbar-links {
+    gap: 1.1rem;
+    flex-wrap: wrap;
+  }
+}

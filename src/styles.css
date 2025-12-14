@@ -1,0 +1,362 @@
+/*
+DISEÑO VISUAL – ALBERTO ÁLVAREZ
+Concepto: Silencio, aire, tiempo, museo contemporáneo
+Autor: Curaduría artística web
+*/
+
+/* ======================
+   VARIABLES BASE
+====================== */
+:root {
+  --bg-main: #fcfcfc;
+  --bg-soft: #f5f5f5;
+  --bg-block: #f8f8f8;
+  --text-main: #181818;
+  --text-muted: #888;
+  --accent: #111;
+  --border-light: #e0e0e0;
+  --shadow: 0 4px 32px rgba(0,0,0,0.07);
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --max-width: 1100px;
+}
+
+/* ======================
+   RESET MINIMAL
+====================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ======================
+   CONTENEDOR GENERAL
+====================== */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+section {
+  padding: 7rem 0 6rem 0;
+}
+
+/* ======================
+   TIPOGRAFÍA
+====================== */
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2.2rem;
+  color: var(--accent);
+}
+
+h2 {
+  font-size: 2.3rem;
+  margin-bottom: 2.2rem;
+  color: var(--accent);
+}
+
+p {
+  font-size: 1.13rem;
+  color: var(--text-main);
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+}
+
+p.muted {
+  color: var(--text-muted);
+}
+
+/* ======================
+   HERO
+====================== */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-soft);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1.2rem;
+}
+
+.hero .subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  margin-top: 1.2rem;
+}
+
+/* ======================
+   MANIFIESTO
+====================== */
+.manifesto {
+  background: var(--bg-soft);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  margin: 3rem auto 4rem auto;
+  max-width: 800px;
+  padding: 3rem 2rem;
+}
+
+.manifesto p {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  line-height: 2.2;
+}
+
+/* ======================
+   OBRA / GALERÍA
+====================== */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  width: 100%;
+}
+
+.series {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.series h2 {
+  font-family: var(--font-serif, serif);
+  font-size: 2.1rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  color: var(--text-main, #111);
+  letter-spacing: 0.04em;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+.images img {
+  max-width: 240px;
+  height: auto;
+  border-radius: 12px;
+  background: #fff;
+  border: 6px solid #fff;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.images img:hover {
+  transform: scale(1.045);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.16);
+}
+
+/* ======================
+   BLOQUES DE TEXTO LARGO
+====================== */
+.text-page p {
+  margin-bottom: 2.2rem;
+}
+
+/* ======================
+   BLOG / CUADERNO
+====================== */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.blog-item h3 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+}
+
+.blog-item p {
+  color: var(--text-muted);
+}
+
+/* ======================
+   LINKS
+====================== */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+a:hover {
+  border-color: var(--accent);
+  color: #0077aa;
+}
+
+/* ======================
+   FOOTER
+====================== */
+footer {
+  padding: 4rem 0 2rem 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  text-align: center;
+  border-top: 1px solid var(--border-light);
+  background: var(--bg-soft);
+}
+
+/* ======================
+   ESTILOS ADICIONALES
+====================== */
+
+/* Imagen destacada centrada y con estilo de cuadro */
+.imagen-destacada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 4rem auto;
+  background: var(--bg-block);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  max-width: 420px;
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+}
+.imagen-destacada img {
+  border-radius: 12px;
+  border: 8px solid #fff;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.13);
+  margin-bottom: 1.2rem;
+  max-width: 340px;
+}
+.imagen-destacada p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Bloques de color sutil para biografía y prensa */
+.biography, .press {
+  background: var(--bg-block);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  max-width: 700px;
+  margin: 0 auto 4rem auto;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+/* ======================
+   CONTACTO
+====================== */
+.contact-container {
+  background: var(--bg-block);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  max-width: 700px;
+  margin: 0 auto 4rem auto;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container p {
+  margin-bottom: 1.2rem;
+  font-size: 1.15rem;
+  color: var(--text-main);
+  max-width: 520px;
+}
+
+.contact-email {
+  font-size: 1.18rem;
+  color: #0077ee;
+  font-weight: 600;
+  word-break: break-all;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+@media (max-width: 900px) {
+  .series {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  .images img {
+    max-width: 140px;
+  }
+  .imagen-destacada {
+    max-width: 98vw;
+    padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    gap: 2rem;
+  }
+  .series h2 {
+    font-size: 1.3rem;
+  }
+  .images {
+    gap: 1rem;
+  }
+  .images img {
+    max-width: 90px;
+  }
+  h1 {
+    font-size: 2.1rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  section {
+    padding: 2.5rem 0;
+  }
+  .imagen-destacada img {
+    max-width: 90vw;
+  }
+}

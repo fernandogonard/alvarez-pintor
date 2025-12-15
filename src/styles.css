@@ -263,10 +263,19 @@ a:hover {
 footer {
   padding: 4rem 0 2rem 0;
   font-size: 0.95rem;
-  color: var(--text-muted);
+  color: var(--text-main);
   text-align: center;
   border-top: 1px solid var(--border-light);
-  background: var(--bg-soft);
+  background-color: #F6F2EC;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(200, 190, 170, 0.07) 0, transparent 70%),
+    radial-gradient(circle at 80% 60%, rgba(180, 170, 150, 0.06) 0, transparent 80%),
+    radial-gradient(circle at 50% 80%, rgba(210, 200, 180, 0.05) 0, transparent 75%),
+    radial-gradient(circle at 70% 20%, rgba(220, 210, 190, 0.06) 0, transparent 80%),
+    radial-gradient(circle at 40% 50%, rgba(180, 170, 150, 0.04) 0, transparent 90%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* ======================

@@ -9,8 +9,10 @@ import Gallery from './pages/Gallery';
 import HowIPaint from './pages/HowIPaint';
 import Association from './pages/Association';
 import Press from './pages/Press';
+
 import Blog from './Blog';
 import Contact from './Contact';
+import Footer from './components/Footer';
 
 function App() {
   const { t } = useTranslation();
@@ -40,6 +42,7 @@ function App() {
         <ArtisticDivider />
         <section id="contacto"><Contact /></section>
       </div>
+      <Footer />
     </>
   );
 }

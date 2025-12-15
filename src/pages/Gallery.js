@@ -1,4 +1,6 @@
+
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './Gallery.css';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
@@ -19,6 +21,7 @@ const galleryImages = [
 ];
 
 function Gallery() {
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
 
@@ -32,10 +35,10 @@ function Gallery() {
 
   return (
     <div className="gallery">
-      <h1>Obra</h1>
+      <h1>{t('gallery.title')}</h1>
 
       <section className="series">
-        <h2>Serie Andino</h2>
+        <h2>{t('gallery.andino')}</h2>
         <div className="images">
           {getImages(0, 3).map((img, i) => (
             <img

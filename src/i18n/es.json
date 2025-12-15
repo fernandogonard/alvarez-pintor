@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "biography": "Biografía",
+    "gallery": "Obra",
+    "press": "Prensa",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+  "title": "Alberto Álvarez – Pintor argentino",
+  "featured": {
+    "alt": "Obra destacada",
+    "caption": "Óleo sobre tela\nSerie Andino"
+  },
+  "biography": {
+    "title": "Biografía",
+    "p1": "Nací en Mendoza en 1959.",
+    "p2": "La pintura llegó temprano, no como una elección estética, sino como una forma de estar en el mundo.",
+    "p3": "A los dieciséis años tomé un pincel con la boca y entendí que el cuerpo siempre encuentra caminos alternativos para decir lo que necesita decir.",
+    "p4": "No estudié pintura en academias. Estudié el ritmo.",
+    "p5": "El tiempo que tarda el gesto, la respiración que acompaña el trazo, el silencio que rodea cada decisión.",
+    "p6": "Pinto paisajes, flores, naturalezas muertas. Pinto aquello que no se impone.",
+    "p7": "Desde hace décadas formo parte de la Asociación Mundial de Pintores con la Boca y el Pie y represento a la Argentina como delegado.",
+    "p8": "No como símbolo. Como artista."
+  },
+  "howipaint": {
+    "title": "Cómo Pinto",
+    "p1": "El pincel se apoya en la boca.",
+    "p2": "El cuello guía.\nLa cabeza corrige.",
+    "p3": "La respiración ordena el movimiento.",
+    "p4": "Pintar así no es una hazaña.",
+    "p5": "Es un oficio aprendido\ncon tiempo.",
+    "alt1": "Proceso de pintura 1",
+    "alt2": "Proceso de pintura 2",
+    "videoFallback": "Tu navegador no soporta el elemento de video."
+  },
+  "association": {
+    "title": "Asociación Mundial",
+    "p1": "Alberto Álvarez es miembro pleno de la Asociación Mundial de Pintores con la Boca y el Pie (VDMFK), con sede en Europa.",
+    "p2": "Desde 2019 se desempeña como delegado argentino ante dicha institución.",
+    "p3": "La Asociación agrupa a artistas de más de 60 países y promueve el arte como profesión."
+  },
+  "contact": {
+    "title": "Contacto",
+    "text": "Para consultas institucionales, prensa o exposiciones, por favor contáctanos a través del siguiente correo:"
+  },
+  "blog": {
+    "title": "Blog / Cuaderno",
+    "posts": [
+      {
+        "title": "El arte de lo cotidiano",
+        "date": "12 de diciembre de 2025",
+        "content": "Hoy pinté una taza rota. Me recordó que incluso las cosas más simples tienen historias que contar."
+      },
+      {
+        "title": "Luz y sombra",
+        "date": "10 de diciembre de 2025",
+        "content": "La luz de la tarde entra por la ventana y transforma todo. Es un recordatorio de que la belleza está en los detalles."
+      },
+      {
+        "title": "El silencio del estudio",
+        "date": "8 de diciembre de 2025",
+        "content": "El silencio en mi estudio no es vacío, está lleno de posibilidades. Cada pincelada es un diálogo con el lienzo."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Obra",
+    "andino": "Serie Andino"
+  },
+  "press": {
+    "title": "Prensa",
+    "articles": [
+      {
+        "title": "“Alberto Álvarez, el delegado argentino en la Asociación Mundial de Pintores con la Boca y el Pie (Suiza)”",
+        "desc": "Nota sobre la trayectoria de Álvarez y su rol como delegado argentino en la Asociación Mundial de Pintores con la Boca y el Pie."
+      },
+      {
+        "title": "“Inauguran en el Puerto la muestra ‘ANDINO’ de Alberto Alvarez”",
+        "desc": "Artículo que anuncia la inauguración de la muestra Andino en el Teatro Auditorium de Mar del Plata. Se exhiben paisajes andinos pintados al óleo utilizando el pincel sostenido con la boca, en homenaje a los paisajes de Mendoza, tierra natal del artista. Se destaca que Álvarez es miembro pleno de la Asociación Mundial de Pintores con la Boca y el Pie (VDMFK), delegado por Argentina desde 2019, y se repasan sus premios más importantes: Premio Nacional Bienal A.L.P.I. (1977) y Premio Mundial de la Paz (2000)."
+      },
+      {
+        "title": "“Obras pintadas con el pincel en la boca podrán verse en la muestra ‘Andino’”",
+        "desc": "Crónica del mismo evento expositivo. La muestra Andino rinde tributo a la naturaleza de los Andes mendocinos a través de obras al óleo pintadas con la boca. Se recuerda la trayectoria de Álvarez y sus premios."
+      },
+      {
+        "title": "“Estas son las artistas ganadoras del ‘Salón Juego de Damas 2023’”",
+        "desc": "Comunicado de prensa sobre los ganadores del certamen artístico “Juego de Damas”. Incluye a Álvarez como jurado."
+      }
+    ]
+  }
+}

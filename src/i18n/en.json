@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "biography": "Biography",
+    "gallery": "Gallery",
+    "press": "Press",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "title": "Alberto Álvarez – Argentine Painter",
+  "featured": {
+    "alt": "Featured artwork",
+    "caption": "Oil on canvas\nAndino Series"
+  },
+  "biography": {
+    "title": "Biography",
+    "p1": "I was born in Mendoza in 1959.",
+    "p2": "Painting came early, not as an aesthetic choice, but as a way of being in the world.",
+    "p3": "At sixteen I took a brush with my mouth and understood that the body always finds alternative ways to say what it needs to say.",
+    "p4": "I did not study painting in academies. I studied rhythm.",
+    "p5": "The time it takes for the gesture, the breath that accompanies the stroke, the silence that surrounds each decision.",
+    "p6": "I paint landscapes, flowers, still lifes. I paint what does not impose itself.",
+    "p7": "For decades I have been part of the Association of Mouth and Foot Painting Artists and represent Argentina as a delegate.",
+    "p8": "Not as a symbol. As an artist."
+  },
+  "howipaint": {
+    "title": "How I Paint",
+    "p1": "The brush rests in the mouth.",
+    "p2": "The neck guides.\nThe head corrects.",
+    "p3": "Breathing orders the movement.",
+    "p4": "Painting this way is not a feat.",
+    "p5": "It is a craft learned\nover time.",
+    "alt1": "Painting process 1",
+    "alt2": "Painting process 2",
+    "videoFallback": "Your browser does not support the video element."
+  },
+  "association": {
+    "title": "World Association",
+    "p1": "Alberto Álvarez is a full member of the Association of Mouth and Foot Painting Artists (VDMFK), based in Europe.",
+    "p2": "Since 2019 he has served as the Argentine delegate to this institution.",
+    "p3": "The Association brings together artists from more than 60 countries and promotes art as a profession."
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "For institutional inquiries, press or exhibitions, please contact us at the following email:"
+  },
+  "blog": {
+    "title": "Blog / Notebook",
+    "posts": [
+      {
+        "title": "The art of the everyday",
+        "date": "December 12, 2025",
+        "content": "Today I painted a broken cup. It reminded me that even the simplest things have stories to tell."
+      },
+      {
+        "title": "Light and shadow",
+        "date": "December 10, 2025",
+        "content": "The afternoon light enters through the window and transforms everything. It is a reminder that beauty is in the details."
+      },
+      {
+        "title": "The silence of the studio",
+        "date": "December 8, 2025",
+        "content": "The silence in my studio is not empty, it is full of possibilities. Each brushstroke is a dialogue with the canvas."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Gallery",
+    "andino": "Andino Series"
+  },
+  "press": {
+    "title": "Press",
+    "articles": [
+      {
+        "title": "“Alberto Álvarez, the Argentine delegate in the World Association of Mouth and Foot Painting Artists (Switzerland)”",
+        "desc": "Article about Álvarez's career and his role as Argentine delegate in the World Association of Mouth and Foot Painting Artists."
+      },
+      {
+        "title": "“The 'ANDINO' exhibition by Alberto Alvarez opens at the Port”",
+        "desc": "Article announcing the opening of the Andino exhibition at the Auditorium Theater in Mar del Plata. Andean landscapes painted in oil using the brush held in the mouth are exhibited, in homage to the landscapes of Mendoza, the artist's homeland. It is highlighted that Álvarez is a full member of the World Association of Mouth and Foot Painting Artists (VDMFK), Argentine delegate since 2019, and his most important awards are reviewed: National Biennial Prize A.L.P.I. (1977) and World Peace Prize (2000)."
+      },
+      {
+        "title": "“Works painted with the brush in the mouth can be seen at the 'Andino' exhibition”",
+        "desc": "Chronicle of the same exhibition event. The Andino exhibition pays tribute to the nature of the Mendoza Andes through oil paintings made with the mouth. Álvarez's career and awards are recalled."
+      },
+      {
+        "title": "“These are the winning artists of the 'Salón Juego de Damas 2023'”",
+        "desc": "Press release about the winners of the 'Juego de Damas' art contest. Includes Álvarez as a judge."
+      }
+    ]
+  }
+}

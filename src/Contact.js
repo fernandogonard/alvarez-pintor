@@ -1,11 +1,14 @@
+
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './Contact.css';
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <div className="contact-container">
-      <h1>Contacto</h1>
-      <p>Para consultas institucionales, prensa o exposiciones, por favor contáctanos a través del siguiente correo:</p>
+      <h1>{t('contact.title')}</h1>
+      <p>{t('contact.text')}</p>
       <p className="contact-email">contacto@arteejemplo.com</p>
     </div>
   );

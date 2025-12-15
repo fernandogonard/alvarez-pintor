@@ -1,4 +1,7 @@
+
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import LanguageSelector from './LanguageSelector';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -7,6 +10,7 @@ const Navbar = () => {
   // Cierra el menú al hacer clic en un enlace
   const handleLinkClick = () => setOpen(false);
 
+  const { t } = useTranslation();
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -21,12 +25,18 @@ const Navbar = () => {
           <span />
           <span />
         </button>
+        {/* Selector de idioma solo visible en desktop */}
+        <div className="navbar-lang desktop-only">
+          <LanguageSelector />
+        </div>
         <ul className={`navbar-links${open ? ' show' : ''}`}>
-          <li><a href="#biografia" onClick={handleLinkClick}>Biografía</a></li>
-          <li><a href="#obra" onClick={handleLinkClick}>Obra</a></li>
-          <li><a href="#prensa" onClick={handleLinkClick}>Prensa</a></li>
-          <li><a href="#blog" onClick={handleLinkClick}>Blog</a></li>
-          <li><a href="#contacto" onClick={handleLinkClick}>Contacto</a></li>
+          <li><a href="#biografia" onClick={handleLinkClick}>{t('nav.biography')}</a></li>
+          <li><a href="#obra" onClick={handleLinkClick}>{t('nav.gallery')}</a></li>
+          <li><a href="#prensa" onClick={handleLinkClick}>{t('nav.press')}</a></li>
+          <li><a href="#blog" onClick={handleLinkClick}>{t('nav.blog')}</a></li>
+          <li><a href="#contacto" onClick={handleLinkClick}>{t('nav.contact')}</a></li>
+          {/* Selector de idioma solo visible en móvil, dentro del menú */}
+          <li className="mobile-only"><LanguageSelector /></li>
         </ul>
       </div>
     </nav>

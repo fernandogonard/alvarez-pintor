@@ -1,13 +1,16 @@
+
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './Association.css';
 
 function Association() {
+  const { t } = useTranslation();
   return (
     <div className="association">
-      <h1>Asociación Mundial</h1>
-      <p>Alberto Álvarez es miembro pleno de la Asociación Mundial de Pintores con la Boca y el Pie (VDMFK), con sede en Europa.</p>
-      <p>Desde 2019 se desempeña como delegado argentino ante dicha institución.</p>
-      <p>La Asociación agrupa a artistas de más de 60 países y promueve el arte como profesión.</p>
+      <h1>{t('association.title')}</h1>
+      <p>{t('association.p1')}</p>
+      <p>{t('association.p2')}</p>
+      <p>{t('association.p3')}</p>
     </div>
   );
 }

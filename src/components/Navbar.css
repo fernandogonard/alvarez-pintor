@@ -1,3 +1,78 @@
+/* Selector de idioma tipo dropdown */
+.lang-selector-dropdown {
+  position: relative;
+  margin-left: 18px;
+}
+.lang-selector-btn {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 18px;
+  padding: 4px 14px 4px 10px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  transition: border 0.2s, box-shadow 0.2s;
+  gap: 2px;
+}
+.lang-selector-btn:hover, .lang-selector-btn:focus {
+  border: 1.5px solid #0077aa;
+  box-shadow: 0 2px 8px rgba(0,119,170,0.08);
+}
+.lang-selector-menu {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  min-width: 140px;
+  z-index: 2000;
+  padding: 6px 0;
+  margin-top: 2px;
+}
+.lang-selector-item {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 8px 18px 8px 14px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #222;
+  transition: background 0.18s, color 0.18s;
+}
+.lang-selector-item:hover, .lang-selector-item.active {
+  background: #f0f8fa;
+  color: #0077aa;
+}
+/* Responsive: mostrar/ocultar selector de idioma según dispositivo */
+.desktop-only {
+  display: flex;
+}
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .desktop-only {
+    display: none !important;
+  }
+  .mobile-only {
+    display: block !important;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+}
 /* Navbar elegante y minimalista */
 .navbar {
   position: fixed;
@@ -17,6 +92,32 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.7rem 2rem;
+}
+
+@media (max-width: 900px) {
+  .navbar-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 1rem;
+    position: relative;
+  }
+  .navbar-logo {
+    order: 1;
+    margin-right: auto;
+  }
+  .navbar-burger {
+    order: 3;
+    margin-left: auto;
+    position: absolute;
+    right: 1rem;
+    left: auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .navbar-lang.desktop-only {
+    order: 2;
+  }
 }
 
 .navbar-logo {

@@ -1,28 +1,31 @@
+
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './Blog.css';
 
 const Blog = () => {
+  const { t } = useTranslation();
   const posts = [
     {
-      title: 'El arte de lo cotidiano',
-      date: '12 de diciembre de 2025',
-      content: 'Hoy pinté una taza rota. Me recordó que incluso las cosas más simples tienen historias que contar.'
+      title: t('blog.posts.0.title'),
+      date: t('blog.posts.0.date'),
+      content: t('blog.posts.0.content')
     },
     {
-      title: 'Luz y sombra',
-      date: '10 de diciembre de 2025',
-      content: 'La luz de la tarde entra por la ventana y transforma todo. Es un recordatorio de que la belleza está en los detalles.'
+      title: t('blog.posts.1.title'),
+      date: t('blog.posts.1.date'),
+      content: t('blog.posts.1.content')
     },
     {
-      title: 'El silencio del estudio',
-      date: '8 de diciembre de 2025',
-      content: 'El silencio en mi estudio no es vacío, está lleno de posibilidades. Cada pincelada es un diálogo con el lienzo.'
+      title: t('blog.posts.2.title'),
+      date: t('blog.posts.2.date'),
+      content: t('blog.posts.2.content')
     }
   ];
 
   return (
     <div className="blog-container">
-      <h1>Blog / Cuaderno</h1>
+      <h1>{t('blog.title')}</h1>
       {posts.map((post, index) => (
         <div key={index} className="blog-post">
           <h2>{post.title}</h2>

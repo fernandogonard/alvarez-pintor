@@ -35,7 +35,33 @@ html {
 }
 
 body {
-  background: var(--bg-main);
+  /* Color base marfil */
+  background-color: #F6F2EC;
+
+  /*
+    Capa de textura sutil:
+    - Varias radial-gradient superpuestas con baja opacidad
+    - Simulan imperfecciones y manchas suaves del papel
+    - Los tamaños y posiciones aleatorias evitan patrones repetitivos
+  */
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(200, 190, 170, 0.07) 0, transparent 70%),
+    radial-gradient(circle at 80% 60%, rgba(180, 170, 150, 0.06) 0, transparent 80%),
+    radial-gradient(circle at 50% 80%, rgba(210, 200, 180, 0.05) 0, transparent 75%),
+    radial-gradient(circle at 70% 20%, rgba(220, 210, 190, 0.06) 0, transparent 80%),
+    radial-gradient(circle at 40% 50%, rgba(180, 170, 150, 0.04) 0, transparent 90%);
+
+  /*
+    Repetición y tamaño:
+    - No se repite, cubre toda la pantalla
+    - Se adapta a cualquier resolución
+  */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body {
   color: var(--text-main);
   font-family: var(--font-sans);
   line-height: 1.8;
